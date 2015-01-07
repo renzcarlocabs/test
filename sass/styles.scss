@@ -1,0 +1,21 @@
+@import "modules/mixins";
+@import "modules/typography";
+@import "modules/dropdowns";
+@import "modules/buttons";
+
+@import "doc";
+
+/*NOT NEEDED IN THE ACTUAL UI STYLE GUIDE*/
+.text-center{ 
+	text-align: center;
+}
+.text-right{ 
+	text-align: right;
+}
+.text-left{ 
+	text-align: left;
+}
+
+.space1{
+	margin-bottom: 10px;
+}

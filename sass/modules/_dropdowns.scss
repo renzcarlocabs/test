@@ -1,0 +1,104 @@
+/* implementation for dropdown styles should be placed here */
+
+.dropdown {
+  display: inline-block;
+  .dropdown-toggle{
+    display: inline-block;
+    border: 0;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    .icon-wrap{
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      z-index: 9999;
+      .icon-arrow-selector {
+        display: block;
+        margin: 0 auto;
+        line-height: 1px; /*Bootstrap is overriding the line height of the span causing it grow too high*/
+        .up-arrow{display: none;}
+        .down-arrow{display: block;}
+      }
+    }
+  }
+  .dropdown-menu{
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+    @include transition(all .1s ease-out);
+    background-color: #fff;
+    width: 105%;
+    @include border-radius(10px);
+    @include box-shadow(1px 1px 2px 1px rgba(0,0,0,0.35));
+    padding: 3px;
+    border: 0;
+    top: 110%;
+    li{
+      border-bottom: 1px solid #ddd;
+      &:first-child{
+        @include border-radius(8px 8px 0 0);
+      }
+
+      &:last-child{
+        border-bottom: 0;
+        @include border-radius(0 0 8px 8px);
+      }
+      &.active, &:hover{
+        background-color: #f1f5f4;
+      }
+    }
+  }
+  &.open{
+    .dropdown-menu{
+      opacity: 1;
+      visibility: visible;
+      top: 100%;
+    }
+    .icon-wrap{
+      .icon-arrow-selector{
+        .up-arrow{display: block;}
+        .down-arrow{display: none;}
+      }
+    }
+  }
+
+  &.dropdown-1{
+    .dropdown-toggle{
+      font-size: 60px;
+      color: #f26309;
+      background-color: transparent;
+      font-family: "Amplify";
+      padding-right: 50px;
+      .icon-wrap{
+        height: 50px;
+        width: 50px;
+        top: 31px;
+        padding: 9px 5px 0 5px;
+        .icon-arrow-selector{
+          height: 15px;
+          width: 20px;
+          svg{fill:#f26309;}
+        }
+      }
+    }
+    .dropdown-menu{
+      top: 100%;
+      li{
+        font-size: 18px;
+        padding: 10px;
+      }
+    }
+    &.open{
+      .dropdown-menu{
+        top: 65px;
+      }
+      .icon-wrap{
+        background: url('/images/arrow-selector-bg.png') no-repeat;
+      }
+    }
+  }
+
+}
+

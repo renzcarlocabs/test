@@ -1,0 +1,29 @@
+.example-container {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #333;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+}
+
+.block-info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0 4px 0 4px;
+  background: #fff;
+  padding: 2px 7px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+pre {
+  position: relative;
+}

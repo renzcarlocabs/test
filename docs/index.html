@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amplify Learning UI Library</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container-fluid">
+
+      <h1>Amplify Learning UI Library</h1>
+
+      <h2>Components</h2>
+      <p>The following is a list of all the example reusable UI components which exist as a part of the Amplify Learning UI Library.</p>
+
+      <h3>Amplify Dropdown Type 1</h3>
+
+      <div class="example-container">
+        <div class="block-info">Example</div>
+        <div class="dropdown dropdown-1">
+          <button class="dropdown-toggle" data-toggle="dropdown">
+            Dropdown
+            <div class="icon-wrap">
+              <span class="icon-arrow-selector">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg version="1.1" class="label_mark down-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="20px" height="14px" viewBox="0 0 20 14">
+                  <path d="M0.271,2.112l8.704,11.373c0.247,0.322,0.628,0.51,1.031,0.51c0.404,0,0.784-0.188,1.03-0.51l8.704-11.373
+                  c0.438-0.573,0.333-1.396-0.236-1.839c-0.569-0.441-1.386-0.335-1.825,0.238l-7.673,10.027L2.332,0.511
+                  c-0.439-0.574-1.255-0.68-1.825-0.238C0.174,0.532,0,0.919,0,1.312C0,1.592,0.088,1.873,0.271,2.112z"/>
+                </svg>
+
+                <?xml version="1.0" encoding="UTF-8"?>
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg version="1.1" class="label_mark up-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="20px" height="14px" viewBox="0 0 20 14">
+                  <path d="M0.271,11.883L8.975,0.51C9.221,0.188,9.603,0,10.005,0c0.404,0,0.784,0.188,1.03,0.51l8.704,11.373
+                  c0.438,0.573,0.333,1.396-0.236,1.839c-0.569,0.441-1.386,0.335-1.825-0.238L10.005,3.458L2.332,13.484
+                  c-0.439,0.574-1.255,0.68-1.825,0.238C0.174,13.463,0,13.076,0,12.683C0,12.403,0.088,12.122,0.271,11.883z"/>
+                </svg>
+
+              </span>
+            </div>
+          </button>
+
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p>
+        <pre>
+        <div class="block-info">Code</div>
+  &lt;div class=&quot;dropdown dropdown-1&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+      Action &lt;div class=&quot;icon-wrap&quot;&gt;
+        &lt;span class=&quot;icon-arrow-selector&quot;&gt;
+          &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+          &lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"&gt;
+          &lt;svg version="1.1" class="label_mark down-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="20px" height="14px" viewBox="0 0 20 14"&gt;
+            &lt;path d="M0.271,2.112l8.704,11.373c0.247,0.322,0.628,0.51,1.031,0.51c0.404,0,0.784-0.188,1.03-0.51l8.704-11.373
+            c0.438-0.573,0.333-1.396-0.236-1.839c-0.569-0.441-1.386-0.335-1.825,0.238l-7.673,10.027L2.332,0.511
+            c-0.439-0.574-1.255-0.68-1.825-0.238C0.174,0.532,0,0.919,0,1.312C0,1.592,0.088,1.873,0.271,2.112z"/&gt;
+          &lt;/svg&gt;
+
+          &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+          &lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"&gt;
+          &lt;svg version="1.1" class="label_mark up-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="20px" height="14px" viewBox="0 0 20 14"&gt;
+            &lt;path d="M0.271,11.883L8.975,0.51C9.221,0.188,9.603,0,10.005,0c0.404,0,0.784,0.188,1.03,0.51l8.704,11.373
+            c0.438,0.573,0.333,1.396-0.236,1.839c-0.569,0.441-1.386,0.335-1.825-0.238L10.005,3.458L2.332,13.484
+            c-0.439,0.574-1.255,0.68-1.825,0.238C0.174,13.463,0,13.076,0,12.683C0,12.403,0.088,12.122,0.271,11.883z"/&gt;
+          &lt;/svg&gt;
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+        </pre>
+      </p>
+
+      <h3>Amplify Dropdown Type 2</h3>
+
+      <div class="example-container">
+        <div class="block-info">Example</div>
+        <div class="dropdown dropdown-2">
+          <button class="dropdown-toggle" data-toggle="dropdown">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p>
+        <pre>
+          <div class="block-info">Code</div>
+
+&lt;div class="dropdown dropdown-2"&gt;
+  &lt;button class="dropdown-toggle" data-toggle="dropdown"&gt;
+    Dropdown
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+        </pre>
+      </p>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!-- SCRIPT REQUIRED BY THE CHECKBOX -->
+    <script src="/js/check-me.js"></script>
+    <script>
+      $(function() {
+        //THESE SCRIPTS ARE JUST FOR DEMO AND SERVES NO PURPOSE IN THE STYLE UI
+        $(".nav.nav-tabs li a").on("click", function(e){
+          $(".nav.nav-tabs li").removeClass("active");
+          $(this).parent("li").addClass("active");
+          e.preventDefault();
+        });
+
+        $("#showAnimation").click(function(){
+          $(".alert").toggleClass("show-alert hide-alert");
+
+          if($(".alert").hasClass("show-alert"))
+            $(this).text("Hide");
+          else
+            $(this).text("Show");
+        });
+      })
+    </script>
+  </body>
+</html>

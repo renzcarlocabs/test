@@ -1,0 +1,22 @@
+{
+  "name": "amplify-learning-ui-library",
+  "version": "0.0.0",
+  "description": "Amplify Learning UI Library",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitorious.poc.currdc.net:platform/amplify-ui.git"
+  },
+  "author": "",
+  "readmeFilename": "README.md",
+  "gitHead": "21cbf2f24de3a38935d0cb9af3f211a12432c8e9",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-compass": "~0.7.2",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-connect": "~0.7.1",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}
